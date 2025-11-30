@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:device_info_plus/device_info_plus.dart';
 import 'signature_verifier.dart';
 import 'flutter_push.dart';
 
@@ -11,7 +10,6 @@ class UpdateChecker {
   UpdateChecker(this.flutterPush);
 
   Future<Map<String, dynamic>?> check() async {
-    final deviceInfo = DeviceInfoPlugin();
     String platform = 'unknown';
     
     if (Platform.isAndroid) {

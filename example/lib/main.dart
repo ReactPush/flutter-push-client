@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_push_client/flutter_push.dart';
+import 'package:flutter_push_client/flutter_push_client.dart';
 
 // API Key for ReactPush
 const String apiKey = 'iDB-tEiZKD9eF1VFJnLYaZhXi_hnTEeQ6Uy4uq0gmO0';

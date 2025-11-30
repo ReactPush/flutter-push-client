@@ -30,7 +30,7 @@ flutter pub get
 ### Basic Setup
 
 ```dart
-import 'package:flutter_push_client/flutter_push.dart';
+import 'package:flutter_push_client/flutter_push_client.dart';
 
 final flutterPush = FlutterPush(
   apiKey: 'YOUR_APP_API_KEY',

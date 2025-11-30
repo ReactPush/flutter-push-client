@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
@@ -117,7 +116,7 @@ class FlutterPush {
       if (onError != null) {
         onError!(error);
       }
-      throw error;
+      rethrow;
     }
   }
 
@@ -146,12 +145,15 @@ class FlutterPush {
       crashReporter.reportJavaScriptError(error, {
         'context': 'downloadUpdate',
         'updateVersion': update['version'],
-      }).catchError((err) => print('Failed to report download error: $err'));
+      }).catchError((err) {
+        print('Failed to report download error: $err');
+        return false;
+      });
       
       if (onError != null) {
         onError!(error);
       }
-      throw error;
+      rethrow;
     }
   }
 
@@ -208,7 +210,7 @@ class FlutterPush {
       return newDeviceId;
     } catch (error) {
       print('FlutterPush: Failed to reset device ID: $error');
-      throw error;
+      rethrow;
     }
   }
 

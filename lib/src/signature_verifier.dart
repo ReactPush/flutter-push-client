@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 import 'package:crypto/crypto.dart';
 import 'package:pointycastle/export.dart' as pc;
 import 'package:asn1lib/asn1lib.dart';
@@ -43,8 +42,8 @@ Future<bool> verifyUpdateSignature(
     final topLevelSeq = asn1Parser.nextObject() as ASN1Sequence;
     
     // Extract modulus and exponent from the sequence
-    final modulus = (topLevelSeq.elements![0] as ASN1Integer).intValue;
-    final exponent = (topLevelSeq.elements![1] as ASN1Integer).intValue;
+    final modulus = (topLevelSeq.elements[0] as ASN1Integer).intValue;
+    final exponent = (topLevelSeq.elements[1] as ASN1Integer).intValue;
 
     // Create RSA public key
     final rsaPublicKey = pc.RSAPublicKey(
