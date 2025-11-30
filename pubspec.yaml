@@ -1,6 +1,6 @@
 name: flutter_push_client
 description: Flutter client library for ReactPush update system. Allows Flutter apps to check for and download remote bundle updates.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/reactpush/flutter-push-client
 
 environment:

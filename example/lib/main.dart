@@ -4,8 +4,7 @@ import 'package:flutter_push_client/flutter_push_client.dart';
 
 // API Key for ReactPush
 const String apiKey = 'iDB-tEiZKD9eF1VFJnLYaZhXi_hnTEeQ6Uy4uq0gmO0';
-// Use localhost in debug mode, production URL otherwise
-final String apiUrl = kDebugMode ? 'http://localhost:8686' : 'https://reactpush.com';
+final String apiUrl = 'https://reactpush.com';
 const String appVersion = '0.0.1';
 
 void main() {

@@ -26,7 +26,7 @@ class FlutterPush {
 
   FlutterPush({
     required this.apiKey,
-    this.apiUrl = 'http://localhost:5000',
+    this.apiUrl = 'https://reactpush.com',
     required this.appVersion,
     this.userId,
     this.onUpdateAvailable,
