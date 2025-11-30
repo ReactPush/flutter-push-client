@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_push_client:
-    path: ../client_flutter
+    path: ../
   cupertino_icons: ^1.0.6
 
 dev_dependencies:

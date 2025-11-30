@@ -145,7 +145,7 @@ packages:
   flutter_push_client:
     dependency: "direct main"
     description:
-      path: "../client_flutter"
+      path: ".."
       relative: true
     source: path
     version: "1.0.0"
